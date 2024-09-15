@@ -38,11 +38,6 @@
             android:label="@string/title_activity_cadastro_livro"
             android:theme="@style/Theme.Bliotech" />
         <activity
-            android:name=".ui.theme.CadastroLivroActivity"
-            android:exported="false"
-            android:label="@string/title_activity_cadastro_livro"
-            android:theme="@style/Theme.Bliotech" />
-        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"

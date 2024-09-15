@@ -1,17 +1,14 @@
 package com.example.bliotech
 
 import android.content.Intent
-import android.graphics.Typeface
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
@@ -34,10 +31,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.bliotech.ui.theme.BliotechTheme
-import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontFamily
-import androidx.compose.ui.text.font.Font
-import androidx.compose.ui.res.fontResource
+
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -59,7 +54,7 @@ class MainActivity : ComponentActivity() {
                         "ExibeEmprestimos" -> startActivity(
                             Intent(this, ExibeEmprestimosActivity::class.java)
                         )
-                        "EmprestimoLivro" -> startActivity(
+                        "NovoEmprestimo" -> startActivity(
                             Intent(this, NovoEmprestimoActivity::class.java)
                         )
                     }
@@ -81,7 +76,7 @@ fun TelaInicialPreview() {
 }
 
 @Composable
-fun botaoEstilizado(text: String, onClick: () -> Unit){
+fun BotaoEstilizado(text: String, onClick: () -> Unit){
     Button(
         colors = ButtonDefaults.buttonColors(
             containerColor = Color(0xFF8C0009),
@@ -95,7 +90,7 @@ fun botaoEstilizado(text: String, onClick: () -> Unit){
         Text(
             text = text,
             color = Color.White,
-            fontSize = 18.sp,
+            fontSize = 20.sp,
             fontWeight = FontWeight.Bold,
             fontFamily = FontFamily.Monospace
         )
@@ -154,23 +149,23 @@ fun TelaInicial(onNavigate: (String) -> Unit) {
         ) {
             Spacer(modifier = Modifier.height(32.dp))
 
-            botaoEstilizado(text = "Cadastro de Livro", onClick = { onNavigate("CadastroPessoa") })
+            BotaoEstilizado(text = "Cadastro de Livro", onClick = { onNavigate("CadastroLivro") })
 
             Spacer(modifier = Modifier.height(16.dp))
 
-            botaoEstilizado(text = "Cadastro de Pessoa", onClick = { onNavigate("CadastroPessoa") })
+            BotaoEstilizado(text = "Cadastro de Pessoa", onClick = { onNavigate("CadastroPessoa") })
 
             Spacer(modifier = Modifier.height(16.dp))
 
-            botaoEstilizado(text = "Buscar Livro", onClick = { onNavigate("CadastroPessoa") })
+            BotaoEstilizado(text = "Buscar Livro", onClick = { onNavigate("BuscaLivro") })
 
             Spacer(modifier = Modifier.height(16.dp))
 
-            botaoEstilizado(text = "Exibir Empréstimos", onClick = { onNavigate("CadastroPessoa") })
+            BotaoEstilizado(text = "Exibir Empréstimos", onClick = { onNavigate("ExibeEmprestimos") })
 
             Spacer(modifier = Modifier.height(16.dp))
 
-            botaoEstilizado(text = "Novo Empréstimo", onClick = { onNavigate("CadastroPessoa") })
+            BotaoEstilizado(text = "Novo Empréstimo", onClick = { onNavigate("NovoEmprestimo") })
 
         }
 
