@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Bliotech</string>
+    <string name="title_activity_cadastro_livro">CadastroLivroActivity</string>
+    <string name="title_activity_cadastro_pessoa">CadastroPessoaActivity</string>
+    <string name="title_activity_busca_livro">BuscaLivroActivity</string>
+    <string name="title_activity_exibe_emprestimos">ExibeEmprestimosActivity</string>
+    <string name="title_activity_novo_emprestimo">NovoEmprestimoActivity</string>
 </resources>

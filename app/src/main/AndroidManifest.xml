@@ -13,6 +13,36 @@
         android:theme="@style/Theme.Bliotech"
         tools:targetApi="31">
         <activity
+            android:name=".NovoEmprestimoActivity"
+            android:exported="false"
+            android:label="@string/title_activity_novo_emprestimo"
+            android:theme="@style/Theme.Bliotech" />
+        <activity
+            android:name=".ExibeEmprestimosActivity"
+            android:exported="false"
+            android:label="@string/title_activity_exibe_emprestimos"
+            android:theme="@style/Theme.Bliotech" />
+        <activity
+            android:name=".BuscaLivroActivity"
+            android:exported="false"
+            android:label="@string/title_activity_busca_livro"
+            android:theme="@style/Theme.Bliotech" />
+        <activity
+            android:name=".CadastroPessoaActivity"
+            android:exported="false"
+            android:label="@string/title_activity_cadastro_pessoa"
+            android:theme="@style/Theme.Bliotech" />
+        <activity
+            android:name=".CadastroLivroActivity"
+            android:exported="false"
+            android:label="@string/title_activity_cadastro_livro"
+            android:theme="@style/Theme.Bliotech" />
+        <activity
+            android:name=".ui.theme.CadastroLivroActivity"
+            android:exported="false"
+            android:label="@string/title_activity_cadastro_livro"
+            android:theme="@style/Theme.Bliotech" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"

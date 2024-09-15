@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-g    <style name="Theme.Bliotech" parent="android:Theme.Material.Light.NoActionBar">
+        g
+
+        <style name="Theme.Bliotech" parent="android:Theme.Material.Light.NoActionBar">
         <item name="colorPrimary">@color/md_theme_colorPrimary</item>
         <item name="colorOnPrimary">@color/md_theme_onPrimary</item>
         <item name="colorPrimaryContainer">@color/md_theme_primaryContainer</item>
