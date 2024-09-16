@@ -223,7 +223,7 @@ fun CadastroPessoa() {
                 AlertDialog(
                     onDismissRequest = { msgConfirm = false },
                     title = { Text(text = "Sucesso")},
-                    text = {Text("Empréstimo concluido com sucesso!")},
+                    text = {Text("Cadastro Realizado!")},
                     confirmButton = {
                         Button(
                             onClick = {msgConfirm = false}

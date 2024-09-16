@@ -8,18 +8,12 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material3.AlertDialog
-import androidx.compose.material3.Button
-import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Text
-import androidx.compose.material3.TextField
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -36,22 +30,15 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.bliotech.ui.theme.BliotechTheme
-import androidx.compose.foundation.clickable
-import androidx.compose.material3.DropdownMenu
-import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.ExposedDropdownMenuBox
-import androidx.compose.material3.ExposedDropdownMenuDefaults
-import androidx.compose.material3.TextFieldDefaults
-import kotlin.math.exp
 
-class ExibirEmprestimosActivity : ComponentActivity() {
+class ExibeEmprestimosActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
             BliotechTheme {
-                ExibirEmprestimos(
+                ExibeEmprestimos(
                 )
 
             }
@@ -61,14 +48,7 @@ class ExibirEmprestimosActivity : ComponentActivity() {
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun ExibirEmprestimos() {
-    var titulo by remember { mutableStateOf("") }
-    var autor by remember { mutableStateOf("") }
-    var generoLiv by remember { mutableStateOf("") }
-    var msgConfirm by remember { mutableStateOf(false) }
-    var expanded by remember { mutableStateOf(false) }
-    val generos = listOf("Ficção", "Horror", "Romance", "Fantasia")
-
+fun ExibeEmprestimos() {
 
     Box(
         modifier = Modifier
@@ -114,8 +94,8 @@ fun ExibirEmprestimos() {
 
 @Preview(showBackground = true)
 @Composable
-fun ExibirEmprestimosPreview() {
+fun ExibeEmprestimosPreview() {
     BliotechTheme {
-        ExibirEmprestimos()
+        ExibeEmprestimos()
     }
 }

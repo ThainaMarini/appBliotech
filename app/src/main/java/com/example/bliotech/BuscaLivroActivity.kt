@@ -36,22 +36,19 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.bliotech.ui.theme.BliotechTheme
-import androidx.compose.foundation.clickable
 import androidx.compose.material3.DropdownMenu
 import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.ExposedDropdownMenuBox
 import androidx.compose.material3.ExposedDropdownMenuDefaults
-import androidx.compose.material3.TextFieldDefaults
-import kotlin.math.exp
 
-class BuscarLivroActivity : ComponentActivity() {
+class BuscaLivroActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
             BliotechTheme {
-                BuscarLivro(
+                BuscaLivro(
                 )
 
             }
@@ -61,7 +58,7 @@ class BuscarLivroActivity : ComponentActivity() {
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun BuscarLivro() {
+fun BuscaLivro() {
     var titulo by remember { mutableStateOf("") }
     var autor by remember { mutableStateOf("") }
     var generoLiv by remember { mutableStateOf("") }
@@ -213,8 +210,8 @@ fun BuscarLivro() {
 
 @Preview(showBackground = true)
 @Composable
-fun BuscarLivroPreview() {
+fun BuscaLivroPreview() {
     BliotechTheme {
-        BuscarLivro()
+        BuscaLivro()
     }
 }
