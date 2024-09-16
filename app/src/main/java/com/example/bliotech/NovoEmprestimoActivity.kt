@@ -92,7 +92,7 @@ fun NovoEmprestimo() {
             modifier = Modifier
                 .fillMaxSize()
                 .fillMaxHeight(0.9f)
-                .padding(top = 200.dp, bottom = 100.dp),
+                .padding(top = 200.dp),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             // CPF
